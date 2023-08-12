@@ -25,6 +25,7 @@ body{
     margin: 0;
     overflow-x: hidden;
     background-color: var(--blanco);
+    position: relative;
 }
 main{
     display: grid;
@@ -37,22 +38,18 @@ p{
     font-size: 1.5rem;
 }
 
-.complexity{
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto Slab', serif;
-}
+
 .complexity,.intermidiate,.simplicity{
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.complexity{
+    background-color: transparent;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
 }
 
 .complex-content{
@@ -92,7 +89,7 @@ p{
     content: "";
     position: absolute;
     height: 200%;
-    width: 100%;
+    width: calc(100% - 20px);
     top: 20px;
     left: 20px;
     background: radial-gradient(var(--complex-bg) 1px,transparent 2px);
@@ -187,17 +184,15 @@ p{
     content: "";
     position: absolute;
     height: 100%;
-    width: 150%;
+    width: 100%;
     background: linear-gradient(transparent,var(--blanco) 90%);
     z-index: 10;
     pointer-events: none;
 }
 .simplicity{
-    width: 100%;
     background-color: var(--blanco);
     z-index: 10;
     position: relative;
-    display: flex;
     flex-wrap: wrap;
 }
 .simplicity-content{
@@ -275,7 +270,7 @@ p{
     border-right: 1rem solid transparent;
     border-bottom: 1rem solid #EA5980;
     position: absolute;
-    top: 295%;
+    bottom: 0;
     right: 0;
     transform: translate(0,-1rem) rotate(90deg);
     pointer-events: none;
@@ -286,11 +281,11 @@ input[type="checkbox"]{
     position: absolute;
     margin: 0;
     right: 0;
-    top: 295%;
+    opacity: 0;
+    bottom: 1px;
     height: 1.75rem;
     width: 1.75rem;
-    opacity: 0;
-    transform: translate(0,calc(-50% - 0.5rem));
+    transform: translate(0,-0.5rem);
     cursor: pointer;
     z-index: 151;
 
