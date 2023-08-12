@@ -193,6 +193,7 @@ p{
     pointer-events: none;
 }
 .simplicity{
+    width: 100%;
     background-color: var(--blanco);
     z-index: 10;
     position: relative;
