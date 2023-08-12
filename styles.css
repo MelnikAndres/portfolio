@@ -116,6 +116,7 @@ p{
     position: absolute;
     height: 50%;
     width: 50%;
+    z-index: 50;
 }
 .bola-border{
     left: 4%;
