@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+.about-me{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-content: center;
+    place-items:center;
+    height: 100vh;
+    width: 100%;
+    background-color:var(--blanco);
+    font-family: 'Roboto Slab', serif;
+    color: #16211d;
+}
+
+.me{
+    display: grid;
+    place-content: center;
+    place-items:center;
+    height: 50vh;
+}
+.me a{
+    margin-top: 0.75rem;
+    color: #9ED2BE;
+}
+.about-me a, .about-me p{
+    font-weight: 300;
+}
+.about-me p{
+    font-size: 1.1rem;
+}
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.about-me h2, .about-me h1{
+    color: #7EAA92;
+}
+
+.decoration{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
