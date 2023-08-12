@@ -10,7 +10,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Borel&family=Fugaz+One&family=Josefin+Sans&family=Quicksand&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">    </head>
-    <body>
+        <script>
+            (function () {
+                window.onpageshow = function(event) {
+                    if (event.persisted) {
+                        window.location.reload();
+                    }
+                };
+            })();
+        </script>
+        <body>
         <input type="checkbox" id="checkbox" onchange="pushLink()" class="checkbox">
         <main>
             <div class="complexity">

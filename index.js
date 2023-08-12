@@ -10,9 +10,3 @@ document.addEventListener("mousemove", (ev) =>{
 const pushLink = () =>{
     history.pushState({}, "", "./about-me");
 }
-
-var perfEntries = performance.getEntriesByType("navigation");
-
-if (perfEntries[0].type === "back_forward") {
-    location.reload();
-}
