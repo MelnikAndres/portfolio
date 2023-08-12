@@ -6,3 +6,9 @@ document.addEventListener("mousemove", (ev) =>{
         light.style.left = (ev.clientX - 180) + "px" 
     }, 150);
 })
+
+
+const pushLink = () =>{
+    console.log("hola")
+    history.pushState({}, "", "./about-me");
+}
