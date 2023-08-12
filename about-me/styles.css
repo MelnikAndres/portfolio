@@ -1,5 +1,9 @@
 *{
     margin: 0;
+    --blanco:rgb(245, 245, 255);
+}
+body{
+    background-color: var(--blanco);
 }
 .about-me{
     position: relative;
