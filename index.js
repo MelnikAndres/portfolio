@@ -10,3 +10,12 @@ document.addEventListener("mousemove", (ev) =>{
 const pushLink = () =>{
     history.pushState({}, "", "./about-me");
 }
+
+(function () {
+	window.onpageshow = function(event) {
+		if (event.persisted) {
+            document.getElementById("checkbox").checked = false
+			window.location.reload();
+		}
+	};
+})();
