@@ -203,8 +203,8 @@ p{
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
-    padding: 0 1.5%;
+    width: 80%;
+    padding: 0 10%;
     text-align: center;
     background-color: var(--blanco);
     z-index: 100;
@@ -221,9 +221,10 @@ p{
 .heart-text{
     color: var(--simplicity-main);
     font-family: 'Borel', cursive;
+    font-size: 1.5rem;
 }
 .heart-container{
-    width: 0;
+    width: 1rem;
     height: 1rem;
     background-color: transparent;
     position: relative;
@@ -262,14 +263,17 @@ p{
         scale: 1;
     }
 }
+.block{
+    display: inline-block;
+}
 .triangle{
     width: 0;
     height: 0;
     border-left: 1rem solid transparent;
     border-right: 1rem solid transparent;
-    border-bottom: 1rem solid var(--simplicity-main);
+    border-bottom: 1rem solid #EA5980;
     position: absolute;
-    top: 50%;
+    top: 295%;
     right: 0;
     transform: translate(0,-1rem) rotate(90deg);
     pointer-events: none;
@@ -280,7 +284,7 @@ input[type="checkbox"]{
     position: absolute;
     margin: 0;
     right: 0;
-    top: 250%;
+    top: 295%;
     height: 1.75rem;
     width: 1.75rem;
     opacity: 0;
@@ -289,7 +293,11 @@ input[type="checkbox"]{
     z-index: 151;
 
 }
-input[type="checkbox"]:checked + main{
+input[type="checkbox"]:checked + .triangle{
+    opacity: 0 !important;
+    display: none;
+}
+input[type="checkbox"]:checked + .triangle + main{
     opacity: 0 !important;
     display: none;
 }
@@ -322,7 +330,7 @@ input[type="checkbox"]:checked{
     margin: 0;
 }
 
-input[type="checkbox"]:checked + main + .about-me{
+input[type="checkbox"]:checked + .triangle + main + .about-me{
     height: 100vh;
     width: 100%;
     opacity: 1;
