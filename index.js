@@ -19,3 +19,7 @@ const pushLink = () =>{
 		}
 	};
 })();
+const navigationType = window.performance.getEntriesByType('navigation')[0].type;
+if(navigationType === 'reload'){
+    document.getElementById("checkbox").checked = false
+}
