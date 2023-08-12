@@ -8,7 +8,6 @@ document.addEventListener("mousemove", (ev) =>{
 })
 
 const pushLink = () =>{
-    console.log("hola")
     history.pushState({}, "", "./about-me");
 }
 
