@@ -92,7 +92,7 @@ p{
     content: "";
     position: absolute;
     height: 200%;
-    width: 150%;
+    width: 100%;
     top: 20px;
     left: 20px;
     background: radial-gradient(var(--complex-bg) 1px,transparent 2px);
